@@ -1,9 +1,13 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
+import React from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -17,15 +21,36 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Alura Quiz - NFL</title>
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
             <h1>The NFL Quiz</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>aoba irmãos</p>
+            <form onSubmit={function (event) {
+              event.preventDefault();
+
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input
+                onChange={function (event) {
+                  setName(event.target.value);
+                }}
+                placeholder="Digite seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar | {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Widget>
@@ -38,7 +63,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl='http://www.google.com'/>
+      <GitHubCorner projectUrl="http://www.google.com" />
     </QuizBackground>
   );
 }
