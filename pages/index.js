@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -57,7 +56,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="http://www.google.com" />
+      <GitHubCorner projectUrl="https://github.com/RenanCSO/alura-imersao-react-v2" />
     </QuizBackground>
   );
 }
