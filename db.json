@@ -27,7 +27,7 @@
       }
     ],
     "external": [
-      ""
+      "https://alura-imersao-react-v2.renancso.vercel.app/"
     ],
     "theme": {
       "colors": {
