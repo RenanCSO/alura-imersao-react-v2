@@ -1,42 +1,114 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://a.espncdn.com/photo/2021/0122/nfl_sb-bucs-chiefs_16x9.jpg",
+    "title": "Super Bowl LV Quiz",
+    "description": "Test your knowledge about Super Bowl LV curisioties",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://i.ytimg.com/vi/vh5jaFpbXUQ/maxresdefault.jpg",
+        "title": "The Super Bowl LV marks the first time the match-up includes the winning QB in the previous two Super Bowls",
+        "description": "QB history in SB",
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "True",
+          "False"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "http://cdn.bostonsportsextra.com/wp-content/uploads/2017/08/brady-2-1280x640.jpg",
+        "title": "Respectively, including SB LV, how many times TB12 have played the super bowl; how many decades he appeared in the SB; and if he wins, how many rings he have",
+        "description": "More about Tom Brady...",
+        "answer": 1,
+        "alternatives": [
+          "10 times, 2 decades and 6 rings", 
+          "10 times, 3 decades and 7 rings",
+          "14 times, 2 decades and 7 rings",
+          "14 times, 3 decades and 6 rings"
+        ]
+      },
+      {
+        "image": "https://cdn.vox-cdn.com/thumbor/sPrTIc99vYSO9ZpOGcsn4bp0pCE=/0x0:3000x2000/1820x1213/filters:focal(1268x598:1748x1078):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58520531/PatMahomes_Getty_AP_Ringer.0.jpg",
+        "title": "In 31 regular season starts, Patrick Mohomes holds the mark for highest quarterback rating. What's the rating?",
+        "description": "More about Patrick Mahomes...",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "108.9",
+           "109.1",
+           "109.3",
+           "109.5"
+        ]
+      },
+      {
+        "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F-0001%2F11%2F30%2Fpatrick-mahomes.jpg",
+        "title": "PT15 and TB12 age difference is the largest age difference between starting quarterbacks in Super Bowl history. How old is the difference?",
+        "description": "Can age make a difference...",
+        "answer": 3,
+        "alternatives": [
+           "17 years and 44 days",
+           "17 years and 45 days",
+           "18 years and 44 days",
+           "18 years and 45 days"
+        ]
+      },
+      {
+        "image": "https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fthepewterplank.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F1272304035-850x560.jpeg",
+        "title": "From the list below who are Tampa Bay Buccaneers players?",
+        "description": "The Tampa Bay Buccaneers team...",
+        "answer": 1,
+        "alternatives": [
+           "Charvarius Ward, Chris Godwin, Antonio Brown and Scotty Miller",
+           "Mike Evans, Rob Gronkowski, Ronald Jones and Devin White",
+           "Mike Evans, L'Jarius Sneed, Rashad Fenton and Scotty Miller",
+           "Mike Evans, Chris Godwin, Mitchell Schwartz and Andy Reid"
+        ]
+      },
+      {
+        "image": "https://arrowheadaddict.com/wp-content/uploads/getty-images/2018/08/1063593454.jpeg",
+        "title": "From the list below who are Kansas City Chiefs players?",
+        "description": "The Kansas City Chiefs team...",
+        "answer": 3,
+        "alternatives": [
+          "Bashaud Breeland, Chris Godwin, Mitchell Schwartz and Andy Reid",
+          "Chris Jones, L'Jarius Sneed, Rashad Fenton and Scotty Miller",
+          "Mike Evans, Eric Fisher, Mike Remmers and Darrel Williams",
+          "Travis Kelce, Clyde Edwards-Helaire, Tyreek Hill and Tyrann Mathieu"
+        ]
+      },
+      {
+        "image": "https://arrowheadaddict.com/wp-content/uploads/getty-images/2018/08/1063593454.jpeg",
+        "title": "Which of the options below are violations in the NFL?",
+        "description": "A little bit more about rules...",
+        "answer": 2,
+        "alternatives": [
+          "Pass interference, Out-of-Bounds and Offensive Three-Second Rule",
+          "Pass interference, Strike the Ball and Obstruction",
+          "Pass interference, Illegal blind side block and Roughing the passer",
+          "Pass interference, Unsportmanlike Conduct and Charging the mound"
+        ]
+      },
+      {
+        "image": "https://ychef.files.bbci.co.uk/976x549/p081whck.jpg",
+        "title": "During halftime of the Super Bowl, the NFL typically presents an extravagant musical performance. Who will sing in the SB LV?",
+        "description": "SB ever has good musical performance...",
+        "answer": 1,
+        "alternatives": [
+           "Beyonce",
+           "The Weeknd",
+           "Lady Gaga",
+           "Bruno Mars"
         ]
       }
     ],
     "external": [
-      "https://alura-imersao-react-v2.renancso.vercel.app/"
+      "https://aluraquiz-copadomundo.antonionarcilio.vercel.app/"
     ],
     "theme": {
       "colors": {
-        "primary": "#0d47a1",
-        "secondary": "#29b6f6",
-        "mainBg": "#171B35",
-        "contrastText": "#FFFFFF",
-        "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "primary": "#b71c1c",
+        "secondary": "#e53935",
+        "mainBg": "#ffebee",
+        "contrastText": "#000000",
+        "wrong": "#f44336",
+        "success": "#388e3c"
       },
       "borderRadius": "4px"
     }

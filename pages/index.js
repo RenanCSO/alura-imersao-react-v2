@@ -48,11 +48,11 @@ export default function Home() {
               <Input
                 name="userName"
                 onChange={(event) => setName(event.target.value)}
-                placeholder="Digite seu nome"
+                placeholder="Enter your name"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                Play
               </Button>
             </form>
           </Widget.Content>
@@ -68,7 +68,7 @@ export default function Home() {
           animate="show"
         >
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
+            <h1>More Quizzes</h1>
 
             <ul>
               {db.external.map((linkExterno) => {

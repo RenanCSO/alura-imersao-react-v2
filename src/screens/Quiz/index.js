@@ -13,12 +13,12 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        Score screen
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Você acertou
+          You scored
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -29,7 +29,7 @@ function ResultWidget({ results }) {
           }, 0)} */}
           {results.filter((x) => x).length}
           {' '}
-          perguntas
+          points
         </p>
         <ul>
           {results.map((result, index) => (
@@ -37,10 +37,11 @@ function ResultWidget({ results }) {
               #
               {index + 1}
               {' '}
-              Resultado:
+              Question
+              {' - '}
               {result === true
-                ? 'Acertou'
-                : 'Errou'}
+                ? 'Right'
+                : 'Wrong'}
             </li>
           ))}
         </ul>
@@ -53,7 +54,7 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        Loading...
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }} />
@@ -79,12 +80,12 @@ function QuestionWidget({
       <Widget.Header>
         <BackLinkArrow href="/" />
         <h3>
-          {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
+          {`Question ${questionIndex + 1} of ${totalQuestions}`}
         </h3>
       </Widget.Header>
 
       <img
-        alt="Descrição"
+        alt="Description"
         style={{
           width: '100%',
           height: '150px',
@@ -140,10 +141,8 @@ function QuestionWidget({
             {JSON.stringify(question, null, 4)}
           </pre> */}
           <Button type="submit" disabled={!hasAlternativeSelected}>
-            Confirmar
+            Confirm
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
